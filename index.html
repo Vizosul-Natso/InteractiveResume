@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://seekicon.com/free-icon-download/star_32.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- css -->
+    <style>
+        :root{
+    --color1:#0B0C10;
+    --color2: #1F2833;
+    --color3:#C5C6C7;
+    --color4:rgb(43, 168, 240);
+    --color5:#66FCF1;
+    --color6:#45A29e;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--color1);
+}
+.resume-container{
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+    
+}
+.heading{
+    max-width: 100vw;
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color:transparent;
+    color: var(--color4)
+}
+.s1{
+    display: flex;
+    font-size: 2rem;
+    animation-name: slide;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+.s11{
+    display: flex;
+    font-size: 1.8rem;
+    animation-name: slide1;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+@keyframes slide {
+    0%{
+        transform: translateY(22vh);
+        scale: 2;
+        filter: brightness(110%);
+    }
+    
+}
+@keyframes slide1 {
+    0%{
+        transform: translateY(28vh);
+        scale: 1.8;
+        filter: brightness(110%);
+    }
+    
+}
+
+/* page */
+.page{
+    margin:10vh 1rem 5rem 1rem;
+    padding: 10px;
+    font-family: sans-serif,serif;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:3rem;
+    background-color: transparent;
+    height: auto;
+    max-width: 100vw;
+    max-height: auto;
+}
+.sec{
+    height: auto;
+    width: 20rem;
+    min-height: 22rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.sec:hover{
+    scale: 1.1;
+}
+#sec1{
+    background-color: var(--color3);
+    box-shadow:0px 0px 10px 2px #a7cff7;
+    color: var(--color2);
+    animation-name: glide;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-delay: 1.3;
+}
+@keyframes glide {
+    0%{
+        transform: translateY(-90vh);
+        filter: brightness(110%);
+    }
+}
+#sec2{
+    background-color: var(--color2);
+    color: var(--color3);
+    box-shadow:0px 0px 10px 2px #42546b;
+    animation-name: glide1;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-delay: 1.3;
+}
+@keyframes glide1 {
+    0%{
+        transform: translateY(150vh);
+        filter: brightness(110%);
+    }
+}
+#sec3{
+    background-color: var(--color6);
+    color: var(--color2);
+    box-shadow:0px 0px 10px 2px #a7cff7;
+    animation-name: glide;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in;
+}
+.sec h1{
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: bold;
+}
+.textbox{
+    margin-top: 1rem;
+    min-height: 7rem;
+}
+.desc{
+    font-size: 1rem;
+    font-style: italic;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    margin-top: 1rem;
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 0.5em;
+    border: none;
+    padding: 4px;
+}
+button:hover{
+    scale: 1.04;
+    transform: translateY(-2px);
+}
+#button:active{
+    transform: translateY(2px);
+    scale:0.9;
+}
+#info-btn{
+    box-shadow: 0 0 7px 3px rgb(39, 25, 236);
+    color: var(--color3);
+    background-color: var(--color2);
+}
+#Edu-btn{
+    box-shadow: 0 0 7px 3px rgb(0, 255, 242);
+    color: white;
+    background-color: var(--color4);
+}
+#Skills{
+    box-shadow: 0 0 7px 3px rgb(24, 76, 245);
+    color: var(--color2);
+    background-color: rgb(41, 111, 216);
+}
+#Projects{
+    box-shadow: 0 0 7px 3px rgb(132, 133, 136);
+    color: var(--color3);
+    background-color: var(--color1);
+}
+#Certification{
+    box-shadow: 0 0 7px 3px rgb(126, 126, 128);
+    color: var(--color1);
+    background-color: rgb(184, 177, 177);
+}
+
+/* pop up */
+.back{
+    align-self: flex-end;
+    box-shadow: 0 0 7px 3px rgb(226, 227, 231);
+    color: var(--color1);
+    background-color: rgb(184, 177, 177);
+}
+.details{
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    width: 36rem;
+    text-align: center;
+    flex-direction: column;
+    background: rgb(10 10 10 / 80%);
+    box-shadow: 0px 4px 10px 6px rgba(198, 182, 223, 0.75);
+    border-radius: 10px;
+    padding: 30px;
+    color: rgb(220, 164, 247);
+    position: absolute;
+    top: 8rem;
+    left: 1rem;
+    right: 1rem;
+  }
+.education{
+    visibility: hidden;
+    display: flex;
+    width: 36rem;
+    flex-direction: column;
+    background: rgb(10 10 10 / 80%);
+    box-shadow: 0px 4px 10px 6px rgba(198, 182, 223, 0.75);
+    border-radius: 10px;
+    padding: 30px;
+    color: rgb(220, 164, 247);
+    position: absolute;
+    top: 8rem;
+    left: 1rem;
+    right: 1rem;
+}
+.Skills{
+    visibility: hidden;
+    display: flex;
+    width: 36rem;
+    flex-direction: column;
+    background: rgb(10 10 10 / 80%);
+    box-shadow: 0px 4px 10px 6px rgba(198, 182, 223, 0.75);
+    border-radius: 10px;
+    padding: 30px;
+    color: rgb(220, 164, 247);
+    position: absolute;
+    top: 8rem;
+    left: 1rem;
+    right: 1rem;
+  }
+  .ProjectsSec{
+    visibility: hidden;
+    display: flex;
+    width: 36rem;
+    flex-direction: column;
+    background: rgb(10 10 10 / 80%);
+    box-shadow: 0px 4px 10px 6px rgba(198, 182, 223, 0.75);
+    border-radius: 10px;
+    padding: 30px;
+    color: rgb(220, 164, 247);
+    position: absolute;
+    top: 8rem;
+    left: 1rem;
+    right: 1rem;
+  }
+  .ProjectsSec button{
+    align-self: flex-end;
+    box-shadow: 0 0 7px 3px rgb(226, 227, 231);
+    color: var(--color1);
+    background-color: rgb(184, 177, 177);
+  }
+  .ProjectsSec button:hover{
+    filter: brightness(110%);
+    transform: translateY(2px);
+  }
+  .certificate{
+    visibility: hidden;
+    display: flex;
+    width: 36rem;
+    flex-direction: column;
+    background: rgb(10 10 10 / 80%);
+    box-shadow: 0px 4px 10px 6px rgba(198, 182, 223, 0.75);
+    border-radius: 10px;
+    padding: 30px;
+    color: rgb(220, 164, 247);
+    position: absolute;
+    top: 8rem;
+    left: 1rem;
+    right: 1rem;
+  }
+  .btn-container{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .R-btn{
+    box-shadow: 0 0 7px 3px rgb(41, 241, 58);
+    color: var(--color1);
+    background-color: var(--color5);
+  }
+
+    </style>
+  </head>
+  <body>
+    <!-- full resume comtainer -->
+    <div class="resume-container">
+      <div class="heading">
+        <h1 class="s1">Vizosul Natso</h1>
+        <h2 class="s11">Software Developer</h2>
+      </div>
+      <div class="page">
+        <div class="sec" id="sec1">
+          <h1 class="p-heading">Pesonal Information</h1>
+          <div class="textbox">
+            <h2 class="desc">
+              I am an enthusiastic and passionate programmer, who enjoy
+              programming to the core. My curiosity and drive propelled me into
+              the world of C, C++, Java, and beyond.
+            </h2>
+          </div>
+          <div class="button-container">
+            <button id="info-btn" onclick="displayPI()">Details</button>
+          </div>
+        </div>
+        <div class="sec" id="sec2">
+          <h1 class="p-heading">Education</h1>
+          <div class="textbox">
+            <h2 class="desc">
+              Graduated from The National Institute of Engineering, Mysore.
+              Specialized in Mechanical Engineering
+            </h2>
+          </div>
+          <div class="button-container">
+            <button id="Edu-btn" onclick="displayEducation()">Details</button>
+          </div>
+        </div>
+        <div class="sec" id="sec3">
+          <h1 class="p-heading">More Inforamtion</h1>
+          <div class="textbox">
+            <h2 class="desc">
+              My expertise is in Web development and Java. Further details of my
+              Skills, Projects and Certification/Achievements are listed below
+            </h2>
+          </div>
+          <div
+            class="button-container"
+            id="more"
+            style="flex-direction: column"
+          >
+            <button id="Skills" onclick="displaySkills()">Skills</button>
+            <button id="Projects" onclick=" displayProjects()">Projects</button>
+            <button id="Certification" onclick="displayCA()">
+              Certifications
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- pop up sections -->
+    <!-- Personal Details -->
+    <div class="details">
+      <h2>
+        Leadership roles and participation in community service have taught me
+        the importance of vision, hard work, and the impact of giving back.
+        These experiences have shaped me into a well-rounded individual who
+        values innovation, accountability, and community. I'm on the lookout for
+        opportunities that challenge me, allow for growth, and contribute
+        positively to the organization and community at large.
+      </h2>
+      <br />
+      <h2>Contact Details</h2>
+      <h2>Email: vizonatso0@gmail.com</h2>
+      <br />
+      <br />
+      <pre><a href="https://www.linkedin.com/in/vizosulnatso/"><i class="fa-brands fa-linkedin fa-beat fa-2xl" style="color: #B197FC;"></i></a>   <a href="https://github.com/Vizosul-Natso"><i class="fa-brands fa-github fa-2xl" style="color: #B197FC;"></i></a></pre>
+      <br />
+      <button class="back" id="b1" onclick="b1()">Back</button>
+    </div>
+    <!-- Education -->
+    <div class="education">
+      <h1 style="text-align: center">Education Details</h1>
+      <br />
+      <b><h2>The National Institute of Engineering, Mysore (NIE)</h2></b>
+      <h2>
+        <i
+          >Bachelor of Engineering in Mechanical Engineering 2023 (Percentage -
+          61.3%)</i
+        >
+      </h2>
+      <br />
+      <b><h2>G.RIO School, Kohima</h2></b>
+      <h2><i>Class XII (Percentage - 64.5%)</i></h2>
+      <br />
+      <b><h2>Alderville School, Kohima</h2></b>
+      <h2><i>Class X (Percentage - 70%)</i></h2>
+      <br />
+      <div class="r-container">
+        <a
+          href="https://drive.google.com/file/d/1VJEpfL9yo_-AGhBRz2YyOUmi7btKHLc6/view?usp=drive_link"
+          target="_blank"
+          ><button class="R-btn">View CV</button></a
+        >
+        <a
+          href=" https://drive.usercontent.google.com/u/1/uc?id=1VJEpfL9yo_-AGhBRz2YyOUmi7btKHLc6&export=download"
+          download=""
+          ><button class="R-btn">Download Cv</button></a
+        >
+      </div>
+      <br />
+      <button class="back" id="b2" onclick="b2()">Back</button>
+    </div>
+    <!-- Skills -->
+    <div class="Skills">
+      <h1 style="text-align: center">Key Skills</h1>
+      <br />
+      <h2>
+        <b>Programming Languages :</b><i>C, C++, Java, JavaScript</i>
+        <br />
+        <b>Database :</b><i>SQL, MySQL</i>
+        <br />
+        <b>Web Technologies :</b><i>HTML, CSS, BootStrap</i>
+        <br />
+        <b>Version Control : </b><i>Git, Github</i>
+        <br />
+        <b>Tools and Frameworks :</b
+        ><i>JDBC, Hibernate, Servlets, Spring, Spring Boot, Postman</i>
+        <br />
+        <b>Soft Skills :</b
+        ><i
+          >Teamwork, Communication, Leadership, Adaptability, Problem-Solving</i
+        >
+        <br />
+      </h2>
+      <br />
+      <button class="back" id="b3" onclick="b3()">Back</button>
+    </div>
+    <!-- projects -->
+    <div class="ProjectsSec">
+      <h1><b>Projects</b></h1>
+      <br />
+      <h1>Math Game</h1>
+      <h2>
+        A mathematical base game to test user knowledge on mathematics. Consist
+        of timer and three difficulty levels. Utilize DOM for great UI
+        experience.
+      </h2>
+      <a
+        href="https://vizosul-natso.github.io/SimpleMathGame/"
+        title="click here to view project"
+        target="_blank"
+        class="btns"
+        ><button>Check Out</button></a
+      ><br />
+      <h1>Calculator</h1>
+      <h2>
+        A calculator web application with basic arithmetic operations. It
+        includes HTML for structure, CSS for styling and responsiveness, and
+        JavaScript for functionality.
+      </h2>
+      <a
+        href="https://vizosul-natso.github.io/basic_calculator/"
+        title="click here to view project"
+        target="_blank"
+        class="btns"
+        ><button>Check Out</button></a
+      >
+      <br />
+      <h1>Joke Teller</h1>
+      <h2>
+        A bot joke teller designed with html,css and Js. Fetching jokes from an
+        API, converts them to speech using the VoiceRSS API, and displays them
+        on the webpage.
+      </h2>
+      <a
+        href="https://vizosul-natso.github.io/Joke-Teller/"
+        title="click here to view project"
+        target="_blank"
+        class="btns"
+        ><button>Check Out</button></a
+      >
+      <br />
+      <h1>Quote Generator</h1>
+      <h4 class="p-item">
+        A responsive quote generator. Designed with web Technologies,the JS
+        contains an array of quotes and JavaScript logic to display a random
+        quote. Also facitity for sharing the quote on WhatsApp.
+      </h4>
+      <a
+        href="https://vizosul-natso.github.io/QuoteGenerator/"
+        title="click here to view project"
+        target="_blank"
+        class="btns"
+        ><button>Check Out</button></a
+      >
+      <br />
+      <button class="back" id="b4" onclick="b4()">Back</button>
+    </div>
+    <!-- certifications -->
+    <div class="certificate">
+      <h1 style="text-align: center">Achievements and Certificaations</h1>
+      <br />
+      <h2>
+        • Achieved a certificate on The Complete Web Development Bootcamp
+        through Udemy, gaining expertise in web technologies.
+      </h2>
+      <br />
+      <h2>
+        • Completed a rigorous six-month course at NETTEC Computer Training
+        Center, Kohima, to earn a comprehensive Certificate in Information
+        Technology, focusing on C++ and Microsoft tools including MS Excel, MS
+        PowerPoint, and MS Word
+      </h2>
+      <br />
+      <h2>
+        • Successfully gained a Certificate from Udemy on Java 17 Masterclass.
+      </h2>
+      <br />
+      <h2>
+        • Awarded Top Project at National Level and First Place at State Level
+        in the National Children Science Congress, held in Jaipur National
+        University
+      </h2>
+      <br />
+      <h2>
+        • Orchestrated and managed a wide range of events as General Secretary
+        of Northeast People Organization Mysore (2019-2020), ensuring flawless
+        execution and seamless coordination for impactful community engagements
+        and fundraisers.
+      </h2>
+      <br />
+      <button class="back" id="b5" onclick="b5()">Back</button>
+    </div>
+
+    <!-- script -->
+    <script>
+let mainContainer = document.getElementsByClassName('resume-container')[0];
+let detailsPI = document.getElementsByClassName('details')[0];
+let education = document.getElementsByClassName('education')[0];
+let Skills = document.getElementsByClassName('Skills')[0];
+let ProjectsSec = document.getElementsByClassName('ProjectsSec')[0];
+let certificate = document.getElementsByClassName('certificate')[0];
+
+function displayPI(){
+    mainContainer.style.visibility = 'hidden';
+    detailsPI.style.visibility = 'visible';
+}
+function b1(){
+    mainContainer.style.visibility = 'visible';
+    detailsPI.style.visibility = 'hidden';
+}
+
+function displayEducation(){
+    mainContainer.style.visibility = 'hidden';
+    education.style.visibility = 'visible';
+}
+
+function b2(){
+    mainContainer.style.visibility = 'visible';
+    education.style.visibility = 'hidden';
+}
+
+function displaySkills(){
+    mainContainer.style.visibility = 'hidden';
+    Skills.style.visibility = 'visible';
+}
+
+function b3(){
+    mainContainer.style.visibility = 'visible';
+    Skills.style.visibility = 'hidden';
+}
+
+function displayProjects(){
+    mainContainer.style.visibility = 'hidden';
+    ProjectsSec.style.visibility = 'visible';
+}
+
+function b4(){
+    mainContainer.style.visibility = 'visible';
+    ProjectsSec.style.visibility = 'hidden';
+}
+
+function displayCA(){
+    mainContainer.style.visibility = 'hidden';
+    certificate.style.visibility = 'visible';
+}
+
+function b5(){
+    mainContainer.style.visibility = 'visible';
+    certificate.style.visibility = 'hidden';
+}
+    </script>
+  </body>
+</html>
